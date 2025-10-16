@@ -106,6 +106,9 @@ main {
   margin-top: 4px;
   display: block;
 }
+#MAIN {
+  margin-top: 5px;
+}
 
 .main__details {
   display: flex;
