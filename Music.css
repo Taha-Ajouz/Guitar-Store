@@ -6,7 +6,6 @@
 
 html,
 body {
-
   scroll-behavior: smooth;
 }
 
@@ -114,7 +113,7 @@ main {
   flex-direction: column;
   color: white;
   font-size: 15px;
-  background-image: url(Images/maing1.jpeg);
+  background-image: url(Guii.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -188,9 +187,9 @@ main {
 }
 .project__imagetit {
   position: absolute;
-  top: 0;
+  top: 1%;
   width: 100%;
-  max-width: 300px;
+  max-width: 230px;
   margin-top: 20px;
   margin-left: 145px;
 }
