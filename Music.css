@@ -82,7 +82,7 @@ main {
 .header__list li {
   display: flex;
   justify-content: center;
-  padding: 5px 10px;
+  padding: 3px 10px;
   color: black;
 }
 .header__list {
@@ -534,10 +534,16 @@ a:hover {
   }
 
   .main__details--back {
-    margin: 0px 220px;
+    margin: 0px 230px;
     background-color: rgba(31, 27, 27, 0.531);
     margin-top: 400px;
     margin-bottom: 50px;
+  }
+  .main__details--tittle {
+    font-size: 46px;
+  }
+  .main__details--tittle2 {
+    font-size: 33px;
   }
   button {
     width: 400px;
@@ -562,13 +568,33 @@ a:hover {
   }
   .header__list--home {
     height: 31px;
-    margin-block: 0px;
+    margin-block: 1px;
   }
   #MAIN {
-    margin-block: 0px;
+    margin-block: 5px;
   }
 }
-
+@media screen and (device-width: 1280px) and (device-height: 800px) {
+  #MAIN {
+    margin-block: 6px;
+  }
+  .header__list--home {
+    height: 40px;
+    margin-top: -1px;
+  }
+  .header__list {
+    padding: 6px 0px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1040px) {
+  #MAIN {
+    margin-block: 4px;
+  }
+  .header__list--home {
+    height: 40px;
+    margin-top: 1px;
+  }
+}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .info__cards {
@@ -617,18 +643,21 @@ a:hover {
     margin-top: -150px;
   }
   .desc__text {
-    margin: 17px 38px;
+    margin: 17px 135px;
     font-size: 15px;
   }
   .desc__tittle {
     font-size: 29px;
   }
   .main__details--back {
-    margin: 218px 147px;
+    margin: 218px 217px;
     margin-top: 317px;
   }
+  .main__text {
+    font-size: 13px;
+  }
   .main__details--tittle {
-    font-size: 50px;
+    font-size: 40px;
   }
   .header__list {
     font-size: 11px;
@@ -650,7 +679,7 @@ a:hover {
     width: 665px;
   }
   .main__details--back {
-    margin: 0px 20px;
+    margin: 0px 100px;
     background-color: rgba(31, 27, 27, 0.531);
     margin-top: 400px;
     margin-bottom: 50px;
@@ -730,7 +759,7 @@ a:hover {
   .header__list {
     gap: 0px;
     font-size: 8px;
-    padding: 8px 0px;
+    padding: 5px 0px;
   }
   li {
     margin-top: -3px;
@@ -754,17 +783,448 @@ a:hover {
   }
   .project__imagetit {
     margin-right: 60px;
-    max-width: 230px;
+    max-width: 170px;
+    top: 0%;
   }
   .header {
     padding: 0px 0px;
-    height: 25px;
+    height: 20px;
+  }
+  #MAIN {
+    margin-block: 1px;
   }
   .header__list--home {
     height: 25px;
-    margin-block: -8px;
+    margin-block: -5px;
   }
   .header__list--home--color {
+    margin-block: 0px;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 415px) and (min-height: 910px) and (max-height: 920px) and (orientation: portrait) {
+  .text1,
+  .text2,
+  .text3 {
+    width: 100px;
+    padding: 2px;
+  }
+  .text4 {
+    width: 304px;
+    padding: 12px;
+  }
+  .feedback__container {
+    gap: 0px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+    justify-self: center;
+  }
+  input[type='submit'] {
+    width: 101px;
+    margin: 5px 0px;
+    justify-self: end;
+    padding: 2px 0px;
+  }
+  .feedback__title {
+    margin-right: 290px;
+    font-size: 12px;
+  }
+  .info__cards {
+    flex-direction: column;
+    gap: 55px;
+  }
+  .desc {
+    margin-bottom: -70px;
+    padding: 0px;
+    margin-top: -2px;
+  }
+  .desc__tittle {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: -8px;
+  }
+  .desc__text {
+    font-size: 8px;
+    margin: 0px 53px;
+    line-height: 12px;
+  }
+  .desc__text2 {
+    font-size: 9px;
+    line-height: 16px;
+  }
+  .main__details--tittle {
+    font-size: 20px;
+  }
+  .main__text {
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 6px;
+    padding: 0px;
+    line-height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main__details--tittle2 {
+    font-size: 16px;
+  }
+  .main__details--back {
+    margin: 95px 69px;
+    margin-bottom: 22px;
+    padding: 7px;
+  }
+
+  button {
+    width: 190px;
+    font-size: 8px;
+  }
+
+  .project__address--name {
+    font-size: 1px;
+  }
+  .project__imagetit {
+    width: 20px;
+  }
+  .main__button {
+    margin-top: 8px;
+    width: fit-content;
+    padding: 8px;
+  }
+  .header {
+    height: 15px;
+  }
+  .header__list {
+    font-size: 4px;
+    gap: 0px;
+    margin-bottom: -10px;
+    padding: 0px 0px;
+  }
+
+  .header__list--home {
+    height: 15px;
+    margin-block: 0px;
+  }
+
+  .header__list--home--color {
+    height: 24px;
+    margin-block: 0px;
+  }
+  #MAIN {
+    margin-block: 0px;
+  }
+  .info__card3 {
+    height: 100%;
+    gap: 0px;
+  }
+  li {
+    padding: 1px;
+  }
+  .info__card1 {
+    gap: 3px;
+  }
+
+  .info__image1,
+  .info__image2,
+  .info__imageb {
+    width: 150px;
+    height: auto;
+  }
+  .desc2 {
+    height: 96px;
+    padding-bottom: 0px;
+  }
+  .desc__text2 {
+    margin-top: 20px;
+  }
+  .info__text {
+    font-size: 0.6rem;
+    line-height: 15px;
+  }
+  .info__list {
+    font-size: 0.8rem;
+    gap: 2px;
+  }
+  .main__button {
+    font-size: 5px;
+  }
+
+  .designer {
+    font-size: 14px;
+  }
+  .designer__name {
+    font-size: 17px;
+  }
+  .scroll {
+    font-size: 15px;
+  }
+  .project__main--title {
+    font-size: 15px;
+  }
+  .project__address {
+    font-size: 7px;
+  }
+  .project__address--name {
+    font-size: 7px;
+  }
+  .project__main {
+    padding: 19px 0px;
+  }
+  .project__imageyell {
+    width: 19px;
+    margin-top: -7px;
+  }
+  .project__yell {
+    font-size: 8px;
+  }
+  .project__imagetit {
+    width: 70px;
+    margin-right: 109px;
+    margin-bottom: 0px;
+    top: 0.5%;
+  }
+  .header__list li {
+    padding: 3px 5px;
+  }
+
+  .Home {
+    margin: 0px px;
+  }
+
+  .header__list--home {
+    margin-block: 0px;
+  }
+  .feedback__title {
+    padding: 20px 0px;
+    margin-right: 270px;
+  }
+  .feedback__container {
+    padding: 0px 0px;
+  }
+  .feedback {
+    height: 200px;
+  }
+
+  .designer__name {
+    font-size: 15px;
+  }
+  .designer {
+    font-size: 12px;
+  }
+  .scroll {
+    font-size: 13px;
+  }
+}
+@media screen and (device-width: 540px) and (device-height: 720px) {
+  .text1,
+  .text2,
+  .text3 {
+    width: 100px;
+    padding: 2px;
+  }
+  .text4 {
+    width: 304px;
+    padding: 12px;
+  }
+  .feedback__container {
+    gap: 0px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 100%;
+    justify-self: center;
+  }
+  input[type='submit'] {
+    width: 101px;
+    margin: 5px 0px;
+    justify-self: end;
+    padding: 2px 0px;
+  }
+  .feedback__title {
+    margin-right: 290px;
+    font-size: 12px;
+  }
+  .info__cards {
+    flex-direction: column;
+    gap: 55px;
+  }
+  .desc {
+    margin-bottom: -70px;
+    padding: 0px;
+    margin-top: -2px;
+  }
+  .desc__tittle {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: -8px;
+  }
+  .desc__text {
+    font-size: 8px;
+    margin: 0px 53px;
+    line-height: 12px;
+  }
+  .desc__text2 {
+    font-size: 9px;
+    line-height: 16px;
+  }
+  .main__details--tittle {
+    font-size: 20px;
+  }
+  .main__text {
+    margin-left: 55px;
+    margin-right: 55px;
+    font-size: 7px;
+    padding: 0px;
+    line-height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main__details--tittle2 {
+    font-size: 16px;
+  }
+  .main__details--back {
+    margin: 95px 122px;
+    margin-bottom: 22px;
+    padding: 7px;
+  }
+
+  button {
+    width: 130px;
+    font-size: 8px;
+    padding: 7px;
+  }
+
+  .project__address--name {
+    font-size: 1px;
+  }
+  .project__imagetit {
+    width: 20px;
+  }
+  .main__button {
+    margin-top: 8px;
+    width: 100px;
+    padding: 7px;
+    font-size: 5px !important;
+  }
+  .header {
+    height: 15px;
+  }
+  .header__list {
+    font-size: 4px;
+    gap: 0px;
+    margin-bottom: -10px;
+    padding: 0px 0px;
+  }
+
+  .header__list--home {
+    height: 15px;
+    margin-block: 0px;
+  }
+
+  .header__list--home--color {
+    height: 24px;
+    margin-block: 0px;
+  }
+  .info__card3 {
+    height: 100%;
+    gap: 0px;
+  }
+  li {
+    padding: 1px;
+  }
+  .info__card1 {
+    gap: 3px;
+  }
+
+  .info__image1,
+  .info__image2,
+  .info__imageb {
+    width: 150px;
+    height: auto;
+  }
+  .desc2 {
+    height: 96px;
+    padding-bottom: 0px;
+  }
+  .desc__text2 {
+    margin-top: 20px;
+  }
+  .info__text {
+    font-size: 0.6rem;
+    line-height: 15px;
+  }
+  .info__list {
+    font-size: 0.8rem;
+    gap: 2px;
+  }
+  .main__button {
+    font-size: 8px;
+  }
+
+  .designer {
+    font-size: 14px;
+  }
+  .designer__name {
+    font-size: 17px;
+  }
+  .scroll {
+    font-size: 15px;
+  }
+  .project__main--title {
+    font-size: 15px;
+  }
+  .project__address {
+    font-size: 7px;
+  }
+  .project__address--name {
+    font-size: 7px;
+  }
+  .project__main {
+    padding: 19px 0px;
+  }
+  .project__imageyell {
+    width: 19px;
+    margin-top: -7px;
+  }
+  .project__yell {
+    font-size: 8px;
+  }
+  .project__imagetit {
+    width: 70px;
+    margin-right: 109px;
+    margin-bottom: 0px;
+    top: 0.5%;
+  }
+  .header__list li {
+    padding: 3px 5px;
+  }
+
+  .Home {
+    margin: 0px px;
+  }
+
+  .header__list--home {
+    margin-block: 0px;
+  }
+  .feedback__title {
+    padding: 20px 0px;
+    margin-right: 270px;
+  }
+  .feedback__container {
+    padding: 0px 0px;
+  }
+  .feedback {
+    height: 200px;
+  }
+
+  .designer__name {
+    font-size: 15px;
+  }
+  .designer {
+    font-size: 12px;
+  }
+  .scroll {
+    font-size: 13px;
+  }
+  #MAIN {
     margin-block: 0px;
   }
 }
@@ -872,8 +1332,8 @@ a:hover {
   }
 }
 
-/* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) {
+/* Extra small devices (phones, less than 540px)
+ @media (max-width: 540px) {
   .text1,
   .text2,
   .text3 {
@@ -940,14 +1400,15 @@ a:hover {
     font-size: 16px;
   }
   .main__details--back {
-    margin: 250px 29px;
+    margin: 95px 30px;
     margin-bottom: 22px;
-    padding: 25px;
+    padding: 7px;
   }
 
   button {
-    width: fit-content;
+    width: 130px;
     font-size: 8px;
+    padding: 7px;
   }
 
   .project__address--name {
@@ -958,7 +1419,9 @@ a:hover {
   }
   .main__button {
     margin-top: 8px;
-    width: fit-content;
+    width: 100px;
+    padding: 7px;
+  font-size: 5px !important;
   }
   .header {
     height: 15px;
@@ -972,7 +1435,12 @@ a:hover {
 
   .header__list--home {
     height: 15px;
-    margin-block: -10px;
+    margin-block: 0px;
+  }
+
+   .header__list--home--color {
+    height: 24px;
+    margin-block: 0px;
   }
   .info__card3 {
     height: 100%;
@@ -1010,9 +1478,7 @@ a:hover {
     font-size: 8px;
   }
 
-  button {
-    width: 190px;
-  }
+ 
   .designer {
     font-size: 14px;
   }
@@ -1042,18 +1508,22 @@ a:hover {
     font-size: 8px;
   }
   .project__imagetit {
-    width: 109px;
+    width: 70px;
     margin-right: 109px;
-    margin-bottom: 2230px;
+    margin-bottom: 0px;
+    top:0.5%;
   }
   .header__list li {
     padding: 3px 5px;
   }
-  .header__list--home--color {
-    margin-block: 10px;
-  }
+ 
   .Home {
-    margin: 0px 0px;
+    margin: 0px px;
+  }
+  
+  .header__list--home{
+    margin-block:0px;
+  
   }
   .feedback__title {
     padding: 20px 0px;
@@ -1075,10 +1545,8 @@ a:hover {
   .scroll {
     font-size: 13px;
   }
-  #MAIN {
-    margin-block: 0px;
-  }
-}
+  
+}  */
 
 @media (min-width: 900px) and (max-width: 950px) and (min-height: 1300px) and (max-height: 1400px) {
   /* Styles for Surface Pro 7 in portrait */
@@ -1122,7 +1590,7 @@ a:hover {
     font-size: 10px;
   }
 }
-@media (min-width: 882px) and (max-width: 8810px) and (min-height: 344px) and (max-height: 350px) {
+/* @media (min-width: 882px) and (max-width: 8810px) and (min-height: 344px) and (max-height: 350px) {
   .main__text {
     margin: 0px 80px;
     font-size: 11px;
@@ -1219,3 +1687,9 @@ a:hover {
     font-size: medium;
   }
 }
+#MAIN{
+  margin-top: 0px;
+}
+.header__list--home--color{
+  margin-block: -4px;
+} */
