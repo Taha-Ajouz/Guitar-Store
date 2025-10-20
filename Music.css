@@ -889,6 +889,7 @@ a:hover {
     margin-top: 8px;
     width: fit-content;
     padding: 8px;
+    margin-top: 0px;
   }
   .header {
     height: 15px;
