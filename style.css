@@ -525,41 +525,6 @@ section,
 }
 
 /* =========================
-   DARK MODE SUPPORT
-========================= */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111; /* dark background */
-    color: #eee; /* light text */
-  }
-
-  /* Inputs and textareas */
-  .feedback__container input,
-  .feedback__container textarea {
-    background-color: #222; /* dark input background */
-    color: #eee; /* typed text color */
-    border: 1px solid #555; /* dark border */
-  }
-
-  /* Placeholder text in dark mode */
-  .feedback__container input::placeholder,
-  .feedback__container textarea::placeholder {
-    color: #aaa; /* light placeholder color */
-  }
-
-  /* Submit button in dark mode */
-  .feedback__container input[type='submit'] {
-    background: #f5c518; /* stays same */
-    color: #111; /* text contrast */
-  }
-
-  .feedback__container input[type='submit']:hover {
-    background: #d4a90f;
-    color: #111;
-  }
-}
-
-/* =========================
    Media Queries - shrink container & text
 ========================= */
 
